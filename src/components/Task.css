@@ -1,0 +1,16 @@
+.task {
+    background-color: #5a5a5a;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .resize-handle {
+    cursor: ew-resize;
+    padding: 5px;
+  }
+  

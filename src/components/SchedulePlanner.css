@@ -1,0 +1,62 @@
+/* SchedulePlanner.css */
+
+.schedule-planner {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.timeline {
+  position: relative;
+  height: 100%;
+  border-left: 2px solid #444; /* Vertical timeline line */
+  padding-left: 40px;
+  margin-top: 20px;
+}
+
+.time-slot {
+  position: relative;
+  height: 30px; /* Reduced height for cleaner appearance */
+  display: flex;
+  align-items: center;
+}
+
+.time-label {
+  font-size: 0.9rem;
+  color: #fff;
+  position: absolute;
+  left: -70px;
+  width: 60px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.ruler-line {
+  width: 100%;
+  border-top: 1px solid #444; /* Default line */
+  margin-left: 10px; /* Align the line with the timeline */
+}
+
+.hour-marker {
+  border-top: 2px solid #fff; /* Bold line for the hour marker */
+}
+
+.quarter-marker {
+  border-top: 1px solid #555; /* Subtle line for 15-minute intervals */
+}
+
+.time-slot:nth-child(4n) .time-label {
+  font-size: 1.1rem; /* Slightly larger font for the hour labels */
+  font-weight: bold;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #444;
+}
