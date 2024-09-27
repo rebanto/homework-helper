@@ -1,0 +1,27 @@
+.add-class-section{
+    margin-right: 2cqi;
+}
+
+.class-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(36, 33, 33);
+    border-radius: 10px;
+    align-items: center;
+    margin: 10px;
+    margin-top: 5px;
+}
+
+.class-item button {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.class-item .cls-itm {
+    margin-left: 10px;
+}
+
+.confirm {
+    display: flex;
+    justify-content: space-evenly;
+}

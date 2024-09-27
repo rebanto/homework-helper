@@ -36,6 +36,7 @@ function TaskManager({ classes }) {
         placeholder="Enter task name" 
       />
       <button onClick={addTask}>Add Task</button>
+      
       <div>
         <h3>Tasks</h3>
         <ul>

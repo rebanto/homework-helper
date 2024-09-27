@@ -1,53 +1,53 @@
-/* SchedulePlanner.css */
-
 .schedule-planner {
   background-color: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
-  color: #fff;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .timeline {
   position: relative;
   height: 100%;
-  border-left: 2px solid #444; /* Vertical timeline line */
-  padding-left: 40px;
+  border-left: 2px solid #444;
+  padding-left: 50px; 
   margin-top: 20px;
 }
 
 .time-slot {
   position: relative;
-  height: 30px; /* Reduced height for cleaner appearance */
+  height: 40px; 
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .time-label {
-  font-size: 0.9rem;
-  color: #fff;
+  font-size: 0.95rem;
+  color: #ffffff;
   position: absolute;
-  left: -70px;
-  width: 60px;
+  left: -80px; 
+  width: 70px; 
   text-align: right;
   font-weight: bold;
 }
 
 .ruler-line {
   width: 100%;
-  border-top: 1px solid #444; /* Default line */
-  margin-left: 10px; /* Align the line with the timeline */
+  border-top: 1px solid #444; 
+  margin-left: 10px; 
 }
 
 .hour-marker {
-  border-top: 2px solid #fff; /* Bold line for the hour marker */
+  border-top: 2px solid #ffffff;
 }
 
 .quarter-marker {
-  border-top: 1px solid #555; /* Subtle line for 15-minute intervals */
+  border-top: 1px solid #555; 
 }
 
 .time-slot:nth-child(4n) .time-label {
-  font-size: 1.1rem; /* Slightly larger font for the hour labels */
+  font-size: 1.1rem; 
   font-weight: bold;
 }
 
@@ -58,5 +58,10 @@
   top: 0;
   height: 100%;
   width: 2px;
-  background-color: #444;
+  background-color: #444; 
+}
+
+.time-slot:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 5px;
 }
